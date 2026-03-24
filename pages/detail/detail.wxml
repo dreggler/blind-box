@@ -1,0 +1,10 @@
+<view class="container">
+  <image class="image" src="{{blindBox.image}}" />
+  <view class="title">{{blindBox.title}}</view>
+  <view class="price">¥{{blindBox.price}}</view>
+  <view class="desc">{{blindBox.description}}</view>
+  <view class="seller">
+    <text>卖家: {{blindBox.seller}}</text>
+  </view>
+  <view class="btn" bindtap="contactSeller">联系卖家</view>
+</view>

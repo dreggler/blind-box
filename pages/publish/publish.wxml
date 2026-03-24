@@ -1,0 +1,7 @@
+<view class="container">
+  <input class="input" placeholder="盲盒标题" bindinput="onTitleInput" />
+  <input class="input" placeholder="价格" type="number" bindinput="onPriceInput" />
+  <textarea class="textarea" placeholder="描述" bindinput="onDescInput" />
+  <view class="btn" bindtap="chooseImage">选择图片</view>
+  <view class="btn" bindtap="publish">发布</view>
+</view>

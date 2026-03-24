@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="user-info">
+    <image class="avatar" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=user%20avatar%2C%20friendly%2C%20simple%2C%20cartoon&image_size=square" />
+    <view class="user-name">用户名</view>
+  </view>
+  <view class="section">
+    <view class="section-title">我的发布</view>
+    <block wx:for="{{myBlindBoxes}}" wx:key="id">
+      <view class="card">
+        <image class="image" src="{{item.image}}" />
+        <view class="title">{{item.title}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="section">
+    <view class="section-title">我的收藏</view>
+    <block wx:for="{{myFavorites}}" wx:key="id">
+      <view class="card">
+        <image class="image" src="{{item.image}}" />
+        <view class="title">{{item.title}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </block>
+  </view>
+</view>

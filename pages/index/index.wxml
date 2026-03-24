@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="search-bar">
+    <input class="input" placeholder="搜索盲盒" bindinput="onSearchInput" />
+  </view>
+  <view class="blind-box-list">
+    <block wx:for="{{blindBoxes}}" wx:key="id">
+      <view class="card" bindtap="goToDetail" data-id="{{item.id}}">
+        <image class="image" src="{{item.image}}" />
+        <view class="title">{{item.title}}</view>
+        <view class="price">¥{{item.price}}</view>
+        <view class="desc">{{item.description}}</view>
+      </view>
+    </block>
+  </view>
+</view>
