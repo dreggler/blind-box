@@ -1,6 +1,4 @@
 {
-      {
-        "pagePath": "pages/publish/publish",
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
@@ -18,18 +16,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-active.png"
+        "iconPath": "images/home.jpg",
+        "selectedIconPath": "images/home-active.jpg"
       },
+      {
+        "pagePath": "pages/publish/publish",
         "text": "发布",
-        "iconPath": "images/publish.png",
-        "selectedIconPath": "images/publish-active.png"
+        "iconPath": "images/publish.jpg",
+        "selectedIconPath": "images/publish-active.jpg"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my-active.png"
+        "iconPath": "images/my.jpg",
+        "selectedIconPath": "images/my-active.jpg"
       }
     ]
   }
