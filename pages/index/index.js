@@ -6,7 +6,14 @@ Page({
         title: "限量款手办盲盒",
         price: 88,
         image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=limited%20edition%20figure%20blind%20box%2C%20collectible%2C%20colorful%2C%20high%20quality&image_size=square",
-        description: "内含随机手办，数量有限"
+        description: "内含随机手办，数量有限",
+        sellerAvatar: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=user%20avatar%2C%20friendly%2C%20woman%2C%20portrait&image_size=square",
+        sellerName: "猫猫",
+        sellerAge: 24,
+        sellerJob: "财务",
+        preferences: "生活品质高、圈子简单、健身",
+        sellerDescription: "不拘小节，很好相处，有点被动，需要慢慢",
+        sellerImage: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cat%20in%20home%2C%20cute%2C%20indoor%2C%20realistic&image_size=landscape_16_9"
       },
       {
         id: 2,

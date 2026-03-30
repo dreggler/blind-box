@@ -1,15 +1,42 @@
 <view class="container">
-  <view class="search-bar">
-    <input class="input" placeholder="搜索盲盒" bindinput="onSearchInput" />
+  <view class="header">
+    <view class="header-title">推荐</view>
+    <view class="header-actions">
+      <view class="header-icon">❤</view>
+      <view class="header-icon">⚙</view>
+    </view>
   </view>
-  <view class="blind-box-list">
-    <block wx:for="{{blindBoxes}}" wx:key="id">
-      <view class="card" bindtap="goToDetail" data-id="{{item.id}}">
-        <image class="image" src="{{item.image}}" />
-        <view class="title">{{item.title}}</view>
-        <view class="price">¥{{item.price}}</view>
-        <view class="desc">{{item.description}}</view>
+  
+  <view class="card">
+    <view class="card-header">
+      <image class="avatar" src="{{blindBoxes[0].sellerAvatar}}" />
+      <view class="user-info">
+        <view class="user-name">{{blindBoxes[0].sellerName}} <text class="verified">✓</text></view>
+        <view class="user-status">在线 | {{blindBoxes[0].sellerAge}}岁·{{blindBoxes[0].sellerJob}}</view>
       </view>
-    </block>
+    </view>
+    
+    <view class="recommendation-text">
+      根据你的偏好 {{blindBoxes[0].preferences}} 推荐
+    </view>
+    
+    <view class="tags">
+      <view class="tag">喜欢乐器</view>
+      <view class="tag">喜欢宅在家里</view>
+      <view class="tag">喜欢健身</view>
+      <view class="tag">财务</view>
+      <view class="tag">160cm</view>
+    </view>
+    
+    <view class="description">
+      {{blindBoxes[0].sellerDescription}}
+    </view>
+    
+    <image class="card-image" src="{{blindBoxes[0].sellerImage}}" />
+    
+    <view class="card-actions">
+      <view class="action-btn like-btn">❤</view>
+      <view class="action-btn dislike-btn">✕</view>
+    </view>
   </view>
 </view>
