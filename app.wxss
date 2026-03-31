@@ -189,3 +189,10 @@ page {
   min-height: 200rpx;
   resize: none;
 }
+
+.order-status {
+  font-size: 24rpx;
+  color: #ff6b6b;
+  margin-top: 8rpx;
+  font-weight: 500;
+}

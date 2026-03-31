@@ -23,4 +23,15 @@
       </view>
     </block>
   </view>
+  <view class="section">
+    <view class="section-title">我的订单</view>
+    <block wx:for="{{myOrders}}" wx:key="id">
+      <view class="card">
+        <image class="image" src="{{item.image}}" />
+        <view class="title">{{item.title}}</view>
+        <view class="price">¥{{item.price}}</view>
+        <view class="order-status">{{item.status}}</view>
+      </view>
+    </block>
+  </view>
 </view>
